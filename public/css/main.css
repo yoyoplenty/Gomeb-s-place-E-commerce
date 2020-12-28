@@ -1,0 +1,42 @@
+.my-nav {
+  background-color: rgb(255, 123, 0);
+}
+.orange {
+  background-color: rgb(255, 123, 0);
+}
+.langar {
+  font-family: "Langar", cursive !important;
+}
+.text-orange {
+  color: rgb(255, 123, 0);
+}
+.black {
+  color: black !important;
+}
+.text-sec {
+  color: rgb(139, 132, 132) !important;
+}
+.main-nav {
+  font-family: "Langar", cursive !important;
+}
+.secondary {
+  background-color: rgb(139, 132, 132);
+}
+body {
+  background-color: rgb(139, 132, 132);
+  font-family: "Quicksand", sans-serif;
+}
+.space {
+  margin-top: 7% !important;
+}
+.no-dec {
+  list-style-type: none;
+}
+.the-image {
+  height: 220px;
+  max-height: 230px;
+}
+.category-image {
+  max-width: 30%;
+  max-height: 70px;
+}

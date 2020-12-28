@@ -1,0 +1,58 @@
+<div class="jumbotron jumbotron-fluid my-nav text-center shadow-lg rounded">
+    <div class="container">
+        <h4>Where are you buying from<button class="btn secondary ml-2 px-3"><a href="#" class="text-white">in
+                    <b>Nigeria</b></a></button></h4>
+        <nav class="navbar navbar-light">
+            <form class="form w-100">
+                <input class="form-control mb-4 mr-sm-2" type="search" placeholder="What would you like to Buy?"
+                    aria-label="Search">
+                <button class="btn secondary mt-2 px-3 my-sm-0" type="submit"><a href="#"
+                        class="text-white"><b>Search</b></a></button>
+            </form>
+        </nav>
+    </div>
+</div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col-md-4">
+            <h4 class="langar text-light pt-1 pl-5">ALL CATEGORIES</h4>
+            <div class="">
+                {{>categories}}
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="orange">
+                <h4 class="pl-3 py-1 langar text-light">Hot Sales (latest)</h4>
+            </div>
+            <div class="sales">
+                {{#each goods}}
+                <div class="row">
+                    {{#each this}}
+                    <div class="col-md-4 mx-0 px-1">
+                        <div class="card mb-2 p-2">
+                            <img src="/uploads/Ads/{{this.AdsImage}}" height="100%"
+                                class="img-fluid the-image card-img-top mb-0 " alt="{{this.title}}">
+                            <div class="">
+                                <h6 class="mt-0 mb-1"><b>{{this.title}}</b></h6>
+                                <h5 class="text-orange langar mb-0">Price<b class="text-dark"> &#8358 {{amount
+                                        this.price}}</b>
+                                </h5>
+                                <a href="/ads/{{this.slug}}" class="btn px-4 orange"><b>Buy</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{{>footer}}
